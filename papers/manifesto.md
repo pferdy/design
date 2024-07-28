@@ -68,7 +68,7 @@ Atomicity of transactions is also critical - without this, users are exposed to 
 
 Global state is essential to the vision of building decentralised economic systems. Information such as asset balances, the status of smart contracts and publicly verifiable data must be available to network participants on a decentralised basis, without being subject to centralised control or arbitrary modification. Global state is also essential for public roots of trust such as  known name services and digital identity.
 
-The should be *one and only one* official global state. This is essential if it is to serve as an authoritative source of truth for systems that depend upon it. A key role of network governance is to enforce this, and a key role of Convex peers is to maintain secure consensus over the global state and validate correct updates.
+There should be *one and only one* official global state. This is essential if it is to serve as an authoritative source of truth for systems that depend upon it. A key role of network governance is to enforce this, and a key role of Convex peers is to maintain secure consensus over the global state and validate correct updates.
 
 The Convex global state is maintained by Peers, managed on a decentralised basis according to protocol rules and available to on-chain smart contracts. This is a true global state, that is not subdivided into shards, programs or other restricted sub-containers. This allows for full interoperability and atomic transactions between all users and automated actors.
 
