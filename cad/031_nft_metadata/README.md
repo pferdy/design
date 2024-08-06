@@ -41,7 +41,7 @@ Metadata MUST be accessed using the following interface either directly or indir
 ;; Using scoped actor
 (call [nft-actor nft-id] (get-metadata))
 
-;; Using a argument
+;; Using an argument
 (call nft-argument (get-metadata nft-id))
 ```
 
