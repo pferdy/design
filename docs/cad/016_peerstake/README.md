@@ -8,7 +8,7 @@ Peers must place a peer stake to participate in consensus. This is at risk if th
 
 Other participants may also place a delegated stake on a peer they wish to vouch for. It is in the interests of large coin holders to support the security of the Network by placing stake on good peer operators that they trust, as well as to earn additional rewards on their holdings.
 
-The total Stake of a seer determines its voting weight in the CPoS consensus algorithm.
+The total Stake of a peer determines its voting weight in the CPoS consensus algorithm.
 
 ## Meaning of Stake
 
@@ -42,12 +42,12 @@ Active time elapsed is calculated when a block is successfully executed in conse
 - The difference between the timestamp of CVM state for this Block and the last such timestamp for the same peer
 - Subject to a maximum of 6000ms * total coin supply / total peer stake
 
-i.e. if the peer's total stake is 1% of the coin supply, it must submit a block at least once every ten minutes to maintain 100% active time. This mechanism is designed to ensure that peers must participate regularly and correctly in order to obtain full rewards.
+i.e. if the peer's total stake is 1% of the coin supply, it must submit a block at least once every ten minutes to maintain 100% active time. This mechanism is designed to ensure that peers must participate regularly and correctly in order to obtain full rewards. [LPA: Can a block just consist of a nul transaction?]
 
 ### Staking split
 
 When rewards are given to a peer, they are divided as follows:
-- The total reward is divided over all Peers according to Peer Stake
+- The total reward is divided over all Peers according to Peer Stake [LPA: The case of Peer or peer needs to be made consistent.  I prefer Peer, and prepared to change it if I see peer]
 - For each Peer:
   - 50% is allocated to the Peer itself (added to peer stake)
   - 50% is divided across delegated stakers on the peer (according to their relative stake)
@@ -62,7 +62,7 @@ Examples:
 - A private stake pool run by a large peer operator to manage stake across its own peers
 - A charitable stake pool which distributes returns to good causes
 
-Stake pools are made possible by peer staking and CVM actor code, but are outside the scope of CAD016. Innovation is encouraged in designing effective stake pool implementations.
+Stake pools are made possible by peer staking and CVM actor code, but are outside the scope of CAD016. [LPA: I don't understand the scope] Innovation is encouraged in designing effective stake pool implementations.
   
 ## Effective stake decay
 
@@ -70,7 +70,7 @@ Peer stakes are temporarily discounted if the peer is inactive. This enables the
 
 Stake decay occurs at the following rate by default:
 - 3 minutes grace period with no decay
-- A fall by a factor of `1/e` every 5 minutes thereafter
+- A fall by a factor of `1/e` [????] every 5 minutes thereafter
 
 Stake decay does not effect the actual peer's stake, but does affect:
 - The effectiveness and voting weight of the stake in consensus
@@ -78,7 +78,7 @@ Stake decay does not effect the actual peer's stake, but does affect:
 
 ## Slashing
 
-Slashing is the penalisation of peers for bad behaviour. Any slashing will result in a deduction of stake, which will be transferred to the overall peer reward pool for properly behaving peers to collect in the future.
+Slashing is the penalisation of peers for bad behaviour. Any slashing will result in a deduction of stake, [LPA: This feels like theft. could it be transfered to some holding acccount in case there is an upheld appeal? Could a bad ISP outage result in a total loss of Stake, or just loos of Peer rewards?] which will be transferred to the overall peer reward pool for properly behaving peers to collect in the future.
 
 There will be **no stake slashing in Protonet**, although stake decay is active so inactive or misbehaving peers will become quickly irrelevant to consensus (and probably be evicted).
 
