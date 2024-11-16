@@ -6,7 +6,7 @@ authors: [mikera, helins]
 tags: [convex, developer, lisp]
 ---
 
-This guide is for developers interested in learning the basics of Convex Lisp. We assume a general familiarity with programming concepts, but no prior experience in Lisp. We will take you through the basics of the language. Veteran Lisp hackers may wish to skip this section, though there are some unique features in Convex Lisp worth noting. 
+This guide is for developers interested in learning the basics of Convex Lisp. We assume a general familiarity with programming concepts, but no prior experience in Lisp. We will take you through the basics of the language. Veteran Lisp hackers may wish to skip this section, though there are some unique features in Convex Lisp worth noting. Newbies should load https://docs.convex.world/docs/products/convex-desktop and try all the examples. 
 
 <!--
 ## Setup
