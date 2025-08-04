@@ -2,7 +2,7 @@
 
 ## About Convex Coins
 
-Convex Coins are the native currency of Convex. It's a utility token that lets you use the full power of the Convex Network. It's also a scarce resource: the coin supply is limited by design.  
+Convex Coins (CVM) are the native currency of Convex. It's a utility token that lets you use the full power of the Convex Network. It's also a scarce resource: the coin supply is limited by design.  
 
 Convex Coins can be subdivided into coppers. 1 Convex Coin = 1,000,000,000 coppers (one billion). This means that you can use small fractions of a Convex Coins: useful for precise calculations of micropayments etc.
 
